@@ -1,0 +1,42 @@
+{
+  "dataset": "sklearn.datasets.load_diabetes(scaled=False)",
+  "seed": 42,
+  "ridge_alpha": 1.0,
+  "train_size": 353,
+  "test_size": 89,
+  "features": [
+    "age",
+    "sex",
+    "bmi",
+    "bp",
+    "s1",
+    "s2",
+    "s3",
+    "s4",
+    "s5",
+    "s6"
+  ],
+  "cv_folds": 5,
+  "target": "dataset disease progression score",
+  "results": {
+    "mean_baseline": {
+      "cv_mae_mean": 66.86728501122265,
+      "cv_mae_std": 5.632089828119415,
+      "test_mae": 64.00646146990485,
+      "test_rmse": 73.22249283682244,
+      "test_r2": -0.011962984778542296
+    },
+    "ridge": {
+      "cv_mae_mean": 44.99887949243906,
+      "cv_mae_std": 1.8079421279860628,
+      "test_mae": 42.81199941834888,
+      "test_rmse": 53.77745406534388,
+      "test_r2": 0.45414652070698247
+    }
+  },
+  "versions": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "sklearn": "1.8.0"
+  }
+}
