@@ -1,0 +1,46 @@
+{
+  "dataset": "sklearn.datasets.load_diabetes(scaled=False)",
+  "seed": 42,
+  "train_size": 353,
+  "excluded_test_size": 89,
+  "cv_folds": 5,
+  "selected_alpha": 1.0,
+  "selection_metric": "minimum mean CV MAE within train",
+  "candidates": [
+    {
+      "alpha": 0.01,
+      "cv_mae_mean": 45.04746618039681,
+      "cv_mae_std": 1.7729484245291425
+    },
+    {
+      "alpha": 0.1,
+      "cv_mae_mean": 45.04113274247246,
+      "cv_mae_std": 1.7765353463127465
+    },
+    {
+      "alpha": 1.0,
+      "cv_mae_mean": 44.99887949243906,
+      "cv_mae_std": 1.8079421279860628
+    },
+    {
+      "alpha": 10.0,
+      "cv_mae_mean": 45.0604351940748,
+      "cv_mae_std": 1.9511966165110606
+    },
+    {
+      "alpha": 100.0,
+      "cv_mae_mean": 46.047403262855234,
+      "cv_mae_std": 2.8687084229986417
+    },
+    {
+      "alpha": 1000.0,
+      "cv_mae_mean": 55.21080532303591,
+      "cv_mae_std": 4.930015571974352
+    }
+  ],
+  "versions": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "sklearn": "1.8.0"
+  }
+}
