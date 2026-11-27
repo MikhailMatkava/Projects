@@ -1,0 +1,59 @@
+{
+  "dataset": "sklearn.datasets.load_diabetes(scaled=False)",
+  "seed": 42,
+  "ridge_alpha": 1.0,
+  "prediction_source": "out-of-fold predictions within train, fixed alpha",
+  "residual_definition": "observed minus predicted",
+  "train_size": 353,
+  "excluded_test_size": 89,
+  "cv_folds": 5,
+  "errors": {
+    "mae": 44.999903910685774,
+    "rmse": 55.41605176173107,
+    "mean_residual": 0.285000134294347,
+    "median_absolute_error": 40.14410934837329,
+    "p90_absolute_error": 92.92378995270698,
+    "largest_errors": [
+      {
+        "dataset_index": 102,
+        "observed": 302.0,
+        "predicted": 133.19341953415957,
+        "residual": 168.80658046584043,
+        "absolute_error": 168.80658046584043
+      },
+      {
+        "dataset_index": 92,
+        "observed": 48.0,
+        "predicted": 191.09686469130568,
+        "residual": -143.09686469130568,
+        "absolute_error": 143.09686469130568
+      },
+      {
+        "dataset_index": 380,
+        "observed": 52.0,
+        "predicted": 192.34327698752156,
+        "residual": -140.34327698752156,
+        "absolute_error": 140.34327698752156
+      },
+      {
+        "dataset_index": 359,
+        "observed": 311.0,
+        "predicted": 172.05202348706393,
+        "residual": 138.94797651293607,
+        "absolute_error": 138.94797651293607
+      },
+      {
+        "dataset_index": 304,
+        "observed": 253.0,
+        "predicted": 122.07233646711633,
+        "residual": 130.92766353288368,
+        "absolute_error": 130.92766353288368
+      }
+    ]
+  },
+  "versions": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "sklearn": "1.8.0"
+  }
+}
