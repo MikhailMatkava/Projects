@@ -1,0 +1,45 @@
+{
+  "dataset": "sklearn.datasets.load_diabetes(scaled=False)",
+  "seed": 42,
+  "ridge_alpha": 1.0,
+  "train_pool_size": 353,
+  "excluded_test_size": 89,
+  "cv_folds": 5,
+  "points": [
+    {
+      "fit_size_per_fold": 56,
+      "train_mae_mean": 40.32147801085155,
+      "validation_mae_mean": 49.12200479687352,
+      "validation_mae_std": 1.9123344400456292
+    },
+    {
+      "fit_size_per_fold": 112,
+      "train_mae_mean": 41.79035930709148,
+      "validation_mae_mean": 45.40958617816393,
+      "validation_mae_std": 1.749736004407721
+    },
+    {
+      "fit_size_per_fold": 169,
+      "train_mae_mean": 43.344314660307155,
+      "validation_mae_mean": 44.46821227068921,
+      "validation_mae_std": 2.4131840891219603
+    },
+    {
+      "fit_size_per_fold": 225,
+      "train_mae_mean": 44.05542555788078,
+      "validation_mae_mean": 44.942872087379726,
+      "validation_mae_std": 1.5547700165529326
+    },
+    {
+      "fit_size_per_fold": 282,
+      "train_mae_mean": 43.302523294949076,
+      "validation_mae_mean": 45.004157765308264,
+      "validation_mae_std": 1.8050535296683081
+    }
+  ],
+  "versions": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "sklearn": "1.8.0"
+  }
+}
